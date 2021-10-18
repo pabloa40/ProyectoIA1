@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1634296886 source:c:\users\pablo\source\feedforward\ia1\feedforward.cpp
+	<iostream>
+	<math.h>
+
+1634545566 source:c:\users\pablo\source\feedforward\ia1\matrix.cpp
+	"matrix.h"
+	<stdexcept>
+
+1634545275 c:\users\pablo\source\feedforward\ia1\matrix.h
+
+1634545301 source:c:\users\pablo\source\feedforward\ia1\main.cpp
+	"matrix.h"
+	<iostream>
+
