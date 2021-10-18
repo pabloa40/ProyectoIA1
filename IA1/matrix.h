@@ -1,6 +1,8 @@
 #ifndef matrix_H
 #define matrix_H
 
+#include<string>
+
 using namespace std;
 
 class Matrix
@@ -14,7 +16,7 @@ public:
     //~Matrix();
     int getRows();
     int getCols();
-    double get(int i, int j);
+    double get(int row, int col);
     Matrix product(Matrix m);
     Matrix product(double** v, int rows, int cols);
     Matrix product(int** v, int i, int j);
@@ -22,6 +24,7 @@ public:
     Matrix add(double** v, int i, int j);
     Matrix add(int** v , int i, int j);
     void asign(int row, int col, double value);
+    string toString();
 };
 
 

@@ -32,12 +32,12 @@ Matrix::Matrix(double** v, int rows, int cols): _rows(rows), _cols(cols)
 
 int Matrix::getCols()
 {
-    return _rows;
+    return _cols;
 }
 
 int Matrix::getRows()
 {
-    return _cols;
+    return _rows;
 }
 
 double Matrix::get(int row, int col)
@@ -99,6 +99,27 @@ Matrix Matrix::product(Matrix m)
             }
         }
 
+    }
+
+    return to_return;
+}
+
+string Matrix::toString()
+{
+    string to_return="";
+
+    for(int i=0; i<_rows; i++)
+    {
+        to_return += "|";
+
+        for(int j=0;j<_cols; j++)
+        {
+
+            to_return += " " + std::to_string(values[i][j]) + " ";
+
+        }
+
+        to_return += "| \n";
     }
 
     return to_return;
