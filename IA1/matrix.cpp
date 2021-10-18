@@ -71,3 +71,35 @@ Matrix Matrix::add(Matrix m)
 
     return to_return;
 }
+
+Matrix Matrix::product(Matrix m)
+{
+    Matrix to_return(_rows, m.getCols());
+
+    double tr_v = 0;
+
+    if(m.getRows()!=_cols)
+    {
+        throw std::invalid_argument("This Matrix can't be producted");
+    }
+    else{
+
+        for(int i=0; i< _rows; i++)
+        {
+            for(int j=0; j<m.getCols(); j++)
+            {
+                tr_v=0;
+
+                for(int k=0; k<_cols; k++)
+                {
+                    tr_v = tr_v + values[i][k]*m.get(k,j);
+                }
+
+                to_return.asign(i,j,tr_v);
+            }
+        }
+
+    }
+
+    return to_return;
+}
