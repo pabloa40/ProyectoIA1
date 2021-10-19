@@ -1,5 +1,5 @@
-#include<iostream>
 #include<math.h>
+#include "feedforward.h"
 
 
 using namespace std;

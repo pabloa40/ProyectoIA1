@@ -33,6 +33,7 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="feedforward.cpp" />
+		<Unit filename="feedforward.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="matrix.cpp" />
 		<Unit filename="matrix.h" />
