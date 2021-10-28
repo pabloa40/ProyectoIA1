@@ -2,6 +2,10 @@ IA1/IA1.layout
 
 IA1/IA1.*
 
-IA1/a.exe
+IA1/*.exe
+
+IA1/bin/
+
+IA1/obj/
 
 .vscode/
