@@ -15,7 +15,7 @@ double linear(double v)
 {
     return v;
 }
-double Step(double v)
+double step(double v)
 {
     if(v<0)
     {

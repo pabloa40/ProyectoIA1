@@ -3,7 +3,7 @@
 
 //hardlimit treshold on 0
 
-double Step(double v);
+double step(double v);
 
 //constant = 1
 
