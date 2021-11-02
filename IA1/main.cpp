@@ -1,4 +1,4 @@
-#include "matrix.h"
+#include "iomatrix.h"
 #include <iostream>
 
 using namespace std;
@@ -21,7 +21,12 @@ int main()
     b.asign(0,0,1);
     b.asign(1,3,7);
 
+    writeMatrix(a, "prueba.matrix");
 
+    Matrix c = readMatrix("prueba.matrix");
+
+    cout<< a.toString();
+    cout<<c.toString();
 
     cout<< a.product(b).toString();
 

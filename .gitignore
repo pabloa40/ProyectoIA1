@@ -9,3 +9,5 @@ IA1/bin/
 IA1/obj/
 
 .vscode/
+
+*.matrix
