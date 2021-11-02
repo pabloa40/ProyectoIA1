@@ -5,6 +5,6 @@
 
 Matrix readMatrix(string file);
 
-bool writeMatris(Matrix matrix, string file);
+bool writeMatrix(Matrix matrix, string file);
 
 #endif
