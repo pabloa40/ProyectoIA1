@@ -16,6 +16,13 @@ public:
     //~Matrix();
     int getRows();
     int getCols();
+    /**
+     * @brief 
+     * 
+     * @param row 
+     * @param col 
+     * @return double 
+     */
     double get(int row, int col);
     Matrix product(Matrix m);
     //Matrix product(double** v, int rows, int cols);
