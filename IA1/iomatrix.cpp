@@ -47,7 +47,7 @@ bool writeMatrix(Matrix matrix)
 
 Matrix readMatrix()
 {
-    return readMatrix(matrix.matrix);
+    return readMatrix("matrix.matrix");
 }
 
 /*
