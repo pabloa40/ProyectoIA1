@@ -40,6 +40,15 @@ bool writeMatrix(Matrix matrix, string file)
     }
 }
 
+bool writeMatrix(Matrix matrix)
+{
+    return writeMatrix(matrix, "matrix.matrix");
+}
+
+Matrix readMatrix()
+{
+    return readMatrix(matrix.matrix);
+}
 
 /*
 Matrix readMatrix(string file)
