@@ -25,6 +25,7 @@ Matrix::Matrix(int rows, int cols) : _rows(rows), _cols(cols)
     }
 }
 
+
 Matrix::Matrix(double** v, int rows, int cols): _rows(rows), _cols(cols)
 {
     values = v;

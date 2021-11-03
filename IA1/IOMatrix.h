@@ -21,4 +21,21 @@ Matrix readMatrix(string file);
  */
 bool writeMatrix(Matrix matrix, string file);
 
+/**
+ * @brief writes a matrix on a matrix.matrix file
+ * 
+ * @param matrix matrix we want to save.
+ * @return true if matrix was saved okey.
+ * @return false if not.
+ */
+bool writeMAtrix(Matrix matrix);
+
+/**
+ * @brief loads a matrix on matrix.matrix file.
+ * 
+ * @return Matrix The matrix saved on matrix.matrix, if there is an error returns Matrix(0,0)
+ */
+
+Matrix readMatrix();
+
 #endif

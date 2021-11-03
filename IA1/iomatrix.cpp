@@ -49,8 +49,6 @@ Matrix readMatrix(string file)
 
     int rows = f_saved.get(int);
     int colums = f_saved.get(int);
-
-
 }
 */
 
@@ -84,7 +82,5 @@ bool writeMatrix(Matrix matrix, string file)
     else{
         return false;
     }
-
-
 }
 */
