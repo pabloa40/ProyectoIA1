@@ -17,11 +17,11 @@ public:
     int getRows();
     int getCols();
     /**
-     * @brief 
+     * @brief get a value of a row and comun of the matrix.
      * 
-     * @param row 
-     * @param col 
-     * @return double 
+     * @param row row of the value we want
+     * @param col column of the value we want
+     * @return double the value on row row and column col
      */
     double get(int row, int col);
     Matrix product(Matrix m);
