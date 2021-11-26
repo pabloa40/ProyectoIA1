@@ -1,0 +1,14 @@
+name: CI C++
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: install g++
+        run: apt install g++
+      - name: build app
+        run: g++ IA1/*.cpp -o ./app.exe
+      - name: run app
+        run: ./app.exe
