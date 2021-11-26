@@ -1,14 +1,16 @@
-name: CI C++
+name: C/C++ CI
+
 on: [push]
 
 jobs:
-  build:
-
+  ubuntu-build:
     runs-on: ubuntu-latest
     steps:
-      - name: install g++
-        run: apt install g++
-      - name: build app
-        run: g++ IA1/*.cpp -o ./app.exe
-      - name: run app
-        run: ./app.exe
+    - name: Checkout
+      uses: actions/checkout@v2.0.0
+    - name: Build project
+      uses: nicledomaS/cmake_build_action@v1.4
+      with:
+        submodule_update: ON
+        run_tests: ON
+        unit_test_build: -Dtest=ON
